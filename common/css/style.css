@@ -3,16 +3,20 @@ body {
 }
 
 
-.command-list dt, .command-list dd {
+.command-list dt {
+  margin-bottom: 4px;
+}
+
+.command-list dd {
   margin-bottom: 16px;
 }
 
 .command-list kbd em {
-  color: red;
+  color: #d44950;
   font-style: normal;
 }
 
 .command-list dd em {
-  color: red;
+  color: #d44950;
   font-style: normal;
 }
