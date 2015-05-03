@@ -14,6 +14,41 @@
     <div class="row">
       <div class="command-list col-md-8">
         <div class="row">
+          <h2 class="col-xs-12">NERD Tree</h2>
+          <dl>
+            <dt class="col-xs-12 col-sm-2"><code>:NERDTree</code></dt>
+            <dd class="col-xs-12 col-sm-10">
+              <p>新しい NERD tree を開く。</p>
+              <p>ツリーのルートは、指定された引数に依存し、3つのケースがある。
+              引数を指定しない場合は、現在のディレクトリが使用される。
+              ディレクトリが指定された場合、それが使用される。
+              ブックマーク名が指定された場合、対応するディレクトリが使用される。</p>
+            </dd>
+            <dt class="col-xs-12 col-sm-2"><code>:NERDTreeToggle</code></dt>
+            <dd class="col-xs-12 col-sm-10">
+              <p>NERD tree を表示する。現在のタブに NERD tree が表示されている場合は NERD tree を閉じる。</p>
+            </dd>
+            <dt class="col-xs-12 col-sm-2"><code>:NERDTreeMirror</code></dt>
+            <dd class="col-xs-12 col-sm-10">
+              <p>現在のタブに、別タブの既存の NERD tree を共有する。
+              それらは実際には同じバッファなので、片方のツリーに加えられた変更は、両方に反映される。</p>
+              <p>NERD tree が1つしか存在しない場合、そのツリーが自動的にミラーリングされる。
+              複数存在する場合、スクリプトはミラー先のツリーを聞いてくる。</p>
+            </dd>
+            <dt class="col-xs-12 col-sm-2"><code>:NERDTreeFind</code></dt>
+            <dd class="col-xs-12 col-sm-10">
+              <p>ツリー内で現在のファイルを検索します。</p>
+              <p>ツリーが存在せず、現在のファイルが Vim の CWD 下にある場合は、CWD でツリーを初期化し、ファイルを表示します。
+              それ以外の場合は、現在のファイルのディレクトリでツリーを初期化する。</p>
+              <p>いずれの場合も、現在のファイルが表示され、カーソルがそのファイルの上に置かれる。</p>
+            </dd>
+            <dt class="col-xs-12 col-sm-2"><code>:NERDTreeCWD</code></dt>
+            <dd class="col-xs-12 col-sm-10">
+              <p>現在のディレクトリにツリーのルートを変更する。
+              NERD tree が現在のタブに存在しない場合、新しいツリーが開かれる。</p>
+            </dd>
+          </dl>
+          <h2 class="col-xs-12">移動</h2>
           <dl>
             <dt class="col-xs-12 col-sm-2"><kbd><em>N</em> CTRL-E</kbd></dt>
             <dd class="col-xs-12 col-sm-10">画面を N 行下方向スクロール(デフォルトは1)画面を N 行下方向スクロール(デフォルトは1)</dd>
