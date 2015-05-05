@@ -26,7 +26,8 @@
             </dd>
             <dt class="col-xs-12 col-sm-2"><code>:NERDTreeToggle</code></dt>
             <dd class="col-xs-12 col-sm-10">
-              <p>NERD tree を表示する。現在のタブに NERD tree が表示されている場合は NERD tree を閉じる。</p>
+              <p>NERD Tree がすでに現在のタブに存在する場合は、それを再度開き、再レンダリングする。
+              現在のタブに NERD Tree が存在しない場合は、<code>:NERDTree</code>コマンドと同じ動作をする。</p>
             </dd>
             <dt class="col-xs-12 col-sm-2"><code>:NERDTreeMirror</code></dt>
             <dd class="col-xs-12 col-sm-10">
@@ -34,6 +35,10 @@
               それらは実際には同じバッファなので、片方のツリーに加えられた変更は、両方に反映される。</p>
               <p>NERD tree が1つしか存在しない場合、そのツリーが自動的にミラーリングされる。
               複数存在する場合、スクリプトはミラー先のツリーを聞いてくる。</p>
+            </dd>
+            <dt class="col-xs-12 col-sm-2"><code>:NERDTreeClose</code></dt>
+            <dd class="col-xs-12 col-sm-10">
+              <p>現在のタブの NERD Tree を閉じる。</p>
             </dd>
             <dt class="col-xs-12 col-sm-2"><code>:NERDTreeFind</code></dt>
             <dd class="col-xs-12 col-sm-10">
