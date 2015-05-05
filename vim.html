@@ -14,9 +14,12 @@
     <div class="row">
       <div class="command-list col-md-8">
         <div class="row">
-          <h2 class="col-xs-12">NERD Tree</h2>
+          <h2 class="col-xs-12">NERD tree</h2>
           <dl>
-            <dt class="col-xs-12 col-sm-2"><code>:NERDTree</code></dt>
+            <dt class="col-xs-12 col-sm-2">
+              <code>:NERDTree</code>
+              <kbd>&lt;Space&gt;nn</kbd>
+            </dt>
             <dd class="col-xs-12 col-sm-10">
               <p>新しい NERD tree を開く。</p>
               <p>ツリーのルートは、指定された引数に依存し、3つのケースがある。
@@ -24,33 +27,56 @@
               ディレクトリが指定された場合、それが使用される。
               ブックマーク名が指定された場合、対応するディレクトリが使用される。</p>
             </dd>
-            <dt class="col-xs-12 col-sm-2"><code>:NERDTreeToggle</code></dt>
+            <dt class="col-xs-12 col-sm-2">
+              <code>:NERDTreeToggle</code>
+              <kbd>&lt;Space&gt;nt</kbd>
+            </dt>
             <dd class="col-xs-12 col-sm-10">
-              <p>NERD Tree がすでに現在のタブに存在する場合は、それを再度開き、再レンダリングする。
+              <p>NERD Tree がすでに現在のタブに存在する場合は、それを <del>再度開き、再レンダリングする。</del> 閉じる。
               現在のタブに NERD Tree が存在しない場合は、<code>:NERDTree</code>コマンドと同じ動作をする。</p>
             </dd>
-            <dt class="col-xs-12 col-sm-2"><code>:NERDTreeMirror</code></dt>
+            <dt class="col-xs-12 col-sm-2">
+              <code>:NERDTreeMirror</code>
+              <kbd>&lt;Space&gt;nm</kbd>
+            </dt>
             <dd class="col-xs-12 col-sm-10">
               <p>現在のタブに、別タブの既存の NERD tree を共有する。
               それらは実際には同じバッファなので、片方のツリーに加えられた変更は、両方に反映される。</p>
               <p>NERD tree が1つしか存在しない場合、そのツリーが自動的にミラーリングされる。
               複数存在する場合、スクリプトはミラー先のツリーを聞いてくる。</p>
             </dd>
-            <dt class="col-xs-12 col-sm-2"><code>:NERDTreeClose</code></dt>
+            <dt class="col-xs-12 col-sm-2">
+              <code>:NERDTreeClose</code>
+              <kbd>&lt;Space&gt;nw</kbd>
+            </dt>
             <dd class="col-xs-12 col-sm-10">
               <p>現在のタブの NERD Tree を閉じる。</p>
             </dd>
-            <dt class="col-xs-12 col-sm-2"><code>:NERDTreeFind</code></dt>
+            <dt class="col-xs-12 col-sm-2">
+              <code>:NERDTreeFind</code>
+              <kbd>&lt;Space&gt;ni</kbd>
+            </dt>
             <dd class="col-xs-12 col-sm-10">
               <p>ツリー内で現在のファイルを検索します。</p>
               <p>ツリーが存在せず、現在のファイルが Vim の CWD 下にある場合は、CWD でツリーを初期化し、ファイルを表示します。
               それ以外の場合は、現在のファイルのディレクトリでツリーを初期化する。</p>
               <p>いずれの場合も、現在のファイルが表示され、カーソルがそのファイルの上に置かれる。</p>
             </dd>
-            <dt class="col-xs-12 col-sm-2"><code>:NERDTreeCWD</code></dt>
+            <dt class="col-xs-12 col-sm-2">
+              <code>:NERDTreeCWD</code>
+              <kbd>&lt;Space&gt;nc</kbd>
+            </dt>
             <dd class="col-xs-12 col-sm-10">
               <p>現在のディレクトリにツリーのルートを変更する。
               NERD tree が現在のタブに存在しない場合、新しいツリーが開かれる。</p>
+            </dd>
+            <dt class="col-xs-12 col-sm-2">
+              <code>:NERDTreeFocus</code>
+              <kbd>&lt;Space&gt;nf</kbd>
+            </dt>
+            <dd class="col-xs-12 col-sm-10">
+              <p>NERD tree にカーソルを移動させる。NERD tree が開いていない場合は、開いてからカーソルを移動させる。</p>
+              <p><small><code>:NERDTreeFocus</code>は、ヘルプには書かれていない。</small></p>
             </dd>
           </dl>
           <h2 class="col-xs-12">移動</h2>
