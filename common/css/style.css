@@ -4,6 +4,7 @@ body {
 
 
 .command-list dt {
+  font-weight: normal;
   margin-bottom: 4px;
 }
 
